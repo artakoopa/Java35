@@ -18,9 +18,12 @@ public class HW4 {
         int number2 = scanner.nextInt();
 
         if((number1 > 0 && number2 > 0) || (number1 < 0 && number2 < 0)) {
-            System.out.println("True");
-        }else{
-            System.out.println("False");
+            System.out.println(true);
+        } else {
+            System.out.println(false);
         }
+
+        //Second solution
+        System.out.println((number1 > 0 && number2 > 0) || (number1 < 0 && number2 < 0));
     }
 }
