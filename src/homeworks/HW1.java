@@ -16,8 +16,7 @@ public class HW1 {
 
         System.out.println("Please enter your birth year");
         int year = scanner.nextInt();
-        year = (2023 - year);
 
-        System.out.println("Your name is " + name + " and you are " + year + " years old");
+        System.out.println("Your name is " + name + " and you are " + (2023 - year) + " years old");
     }
 }
