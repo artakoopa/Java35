@@ -7,14 +7,15 @@ public class GuessNumber {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter max random number");
-        int max = scanner.nextInt();
+
+
+
 
         // Generate random number 0 - max
-        int rand = (int) (Math.random() * (max+1)); // ģenerē max value
+        int rand = (int) (Math.random() * (+1)); // ģenerē max value
        System.out.println("Generate random number = " + rand);
 
-        System.out.println("Random number between 0 and " + max + " was generated");
+        System.out.println("Random number between 0 and "  + " was generated");
 
         int guess;
         do {
