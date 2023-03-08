@@ -12,19 +12,21 @@ public class HM7 {
 
         System.out.println("Enter the required size of the array:");
         int arraySize = scanner.nextInt();
-
         int element[]= new int[arraySize];
 
 
-        for (int i = 0; i <= arraySize; i++) {
+        System.out.println("Please enter the elements of the array on by one");
+
+
+        for (int i = 0; i < arraySize; i++) {
             System.out.println("Please enter element number: " + (i+1));
             element[i] = scanner.nextInt();
-            //sum += arraySize[i];
+            sum += element[i];
 
         }
 
-        System.out.println(Arrays.toString(element));
-        System.out.println("Sum " + sum);
+        System.out.println("Source array:" + Arrays.toString(element));
+       System.out.println("Sum of all array elements:" + sum);
 
     }
 }
