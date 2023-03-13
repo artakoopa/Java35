@@ -1,6 +1,7 @@
 package homeworks;
 
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class HM11 {
     public static void main(String[] args) {
@@ -11,11 +12,17 @@ public class HM11 {
 
         while (again == 'y'){
 
-            String test = scanner.nextLine();
 
-            System.out.println("You are in the while loop");
+            System.out.println("Enter your personal number");
+            String personalNumber = scanner.nextLine();
 
-            System.out.println("Do you want to run again?");
+            if (Pattern.matches("[0-9]{6}-[0-9]{5}",personalNumber)){
+                System.out.println("Your inputted personal number is valid");
+            }else{
+                System.out.println("Your plate number is not valid");
+            }
+
+            System.out.println("Do you want to check your personal number again? y/n");
             again = scanner.next().charAt(0);
             //Fixing problem
             scanner.nextLine();
