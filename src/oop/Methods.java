@@ -15,6 +15,8 @@ public class Methods {
         String answer2 = greetings(usersName);
         System.out.println(answer2);
 
+        System.out.println(sum(4,5,6));
+
 
     }
 
@@ -26,6 +28,10 @@ public class Methods {
     public static String greetings(String name){
         String result = "Hi " + name;
         return result;
+    }
+
+    public static int sum (int num1, int num2, int num3){
+        return num1+num2+num3;
     }
 
 }
