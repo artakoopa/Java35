@@ -8,9 +8,7 @@ public class HM13 {
         int listOfNumbers[] = {234,5,45,23,65,33,1,64,2};
         System.out.println("Original array: " + Arrays.toString(listOfNumbers));
 
-        max(listOfNumbers);
         System.out.println("Maximum value for the above array = " + max(listOfNumbers));
-        min(listOfNumbers);
         System.out.println("Minimum value for the above array = " + min(listOfNumbers));
 
     }
