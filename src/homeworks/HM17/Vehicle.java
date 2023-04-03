@@ -1,6 +1,6 @@
 package homeworks.HM17;
 
-public class Vehicle {
+ public class Vehicle {
 
     private float fuel;
     private float fuelUsage;
@@ -12,13 +12,13 @@ public class Vehicle {
         this.passengers = passengers;
     }
 
-    public float fuelUsageWithPassenger (float fuel, float fuelUsage, int passengers){
-        return fuelUsage + (fuelUsage * (passengers * 0.05f));
+    public float maxDistance (float fuel, float fuelUsage, int passengers){
+        float fuelUsageWithPassenger = fuelUsage + (fuelUsage * (passengers * 0.05f));
+        return (fuel / fuelUsageWithPassenger) * 100;
 
 
     }
-    public float maxDistance(){
-
-        return (fuel / fuelUsageWithPassenger(float fuel, float fuelUsage, int passengers)) * 100;
+    public float maxDistance (){
+        return maxDistance(this.fuel, this.fuelUsage, this.passengers);
     }
 }
