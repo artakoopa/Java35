@@ -16,6 +16,4 @@ public class Car extends Vehicle {
         }
         return (fuel / fuelUsageWithPassenger) * 100;
     }
-
-
 }

@@ -15,10 +15,13 @@ package homeworks.HM17;
     public float maxDistance (float fuel, float fuelUsage, int passengers){
         float fuelUsageWithPassenger = fuelUsage + (fuelUsage * (passengers * 0.05f));
         return (fuel / fuelUsageWithPassenger) * 100;
-
-
+        // pasniedzēja variants
+        //return fuel / (fuelUsage * (1 + passengers * 0.05f)) * 100;
     }
+
     public float maxDistance (){
         return maxDistance(this.fuel, this.fuelUsage, this.passengers);
+        // pasniedzēja variants
+        //return fuel / (fuelUsage * (1 + passengers * 0.05f)) * 100;
     }
 }
